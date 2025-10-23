@@ -6,5 +6,8 @@ export default defineConfig({
   base: './',
   build: {
     outDir: 'dist',
+    rollupOptions: {
+      input: 'src/index.ts', // tell Vite where your entry file is
+    },
   },
 })
